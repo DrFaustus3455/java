@@ -12,7 +12,7 @@ public class ass9 {
         double area = w * h;
         double perimeter = 2 * (w + h);
 
-        System.out.println("Area is " + area);
+        System.out.println("Area is " + area + "cm^2");
         System.out.print("Perimeter is " + perimeter);
 
         scan.close();
