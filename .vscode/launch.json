@@ -2,6 +2,27 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Person",
+      "request": "launch",
+      "mainClass": "Person",
+      "projectName": "java_c52761c5"
+    },
+    {
+      "type": "java",
+      "name": "PersonAdv",
+      "request": "launch",
+      "mainClass": "PersonAdv",
+      "projectName": "java_c52761c5"
+    },
+    {
+      "type": "java",
+      "name": "personAdv",
+      "request": "launch",
+      "mainClass": "personAdv",
+      "projectName": "java_c52761c5"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
