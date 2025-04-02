@@ -58,7 +58,7 @@ public static void main(String[] args) {
 
     Person[] person = new Person[10];
 
-    for(int i=0; i <= 4; i++ ) {
+    for(int i=1; i <= 4; i++ ) {
         person[i] = new Person();
         System.out.print("What is your name: ");
         person[i].name = scan.nextLine();
