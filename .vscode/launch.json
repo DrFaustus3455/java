@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "BankAccount",
+      "request": "launch",
+      "mainClass": "BankAccount",
+      "projectName": "java_c52761c5"
+    },
+    {
+      "type": "java",
+      "name": "StaticMethodExample",
+      "request": "launch",
+      "mainClass": "StaticMethodExample",
+      "projectName": "java_c52761c5"
+    },
+    {
+      "type": "java",
       "name": "Rectangle",
       "request": "launch",
       "mainClass": "Rectangle",
