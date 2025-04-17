@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Time",
+      "request": "launch",
+      "mainClass": "Time",
+      "projectName": "java_c52761c5"
+    },
+    {
+      "type": "java",
+      "name": "DataTypesExample",
+      "request": "launch",
+      "mainClass": "DataTypesExample",
+      "projectName": "java_c52761c5"
+    },
+    {
+      "type": "java",
+      "name": "Example",
+      "request": "launch",
+      "mainClass": "Example",
+      "projectName": "java_c52761c5"
+    },
+    {
+      "type": "java",
       "name": "BankAccount",
       "request": "launch",
       "mainClass": "BankAccount",

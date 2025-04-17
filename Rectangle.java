@@ -1,40 +1,60 @@
 import java.util.Scanner;
 
+class Rectangle {
+    private double length;
+    private double breadth;
+    
 
-public class Rectangle {
+    Rectangle() {
+        this.length = 1;
+        this.breadth = 1;
+    }
 
-    double length;
-    double breath;
-    double area;
-    double perimeter;
+    Rectangle(double length, double breadth) {
+        this.length = length;
+        this.breadth = breadth;
+    }
 
-    void show(){
-        System.out.println();
-        area = length * breath;
-        perimeter = 2 * (length + breath);
-        System.out.println("_________________________");
-        System.out.println("Area: " + area + " cm");
-        System.out.println("Perimeter: " + perimeter + " cm");
-        System.out.println("_________________________");
-        System.out.println();
+    public double getLength() {
+        return this.length;
+    }
+
+    public double getBreadth() {
+        return this.breadth;
+    }
+
+    public void setLength(double length) {
+        this.length = length;
+    }
+
+    public void setBreadth(double breadth) {
+        this.breadth = breadth;
+    }
+
+
+    static double calculateArea(Rectangle r) {
+        return r.length * r.breadth;
+    }
+
+    public double calculatePerimeter() {
+        return 2 * (this.length + this.breadth);
+    }
+
+    public void display() {
+        System.out.println("Length: " + this.length);
+        System.out.println("Breadth: " + this.breadth);
+        System.out.println("Area: " + calculateArea(this));
+        System.out.println("Perimeter: " + this.calculatePerimeter());
     }
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        Rectangle[] rectangle = new Rectangle[10];
+        System.out.print("Enter length: ");
+        double len = scan.nextDouble();
+        System.out.print("Enter breadth: ");
+        double bre = scan.nextDouble();
 
-        for(int i = 1; i <= 2; i++) {
-            rectangle[i] = new Rectangle();
-
-            System.out.print("What is your length: ");
-            rectangle[i].length = scan.nextDouble();
-            System.out.print("What is your breath: ");
-            rectangle[i].breath = scan.nextDouble();
-            rectangle[i].show();
-            
-        }
-       
-        scan.close();
-        
+        Rectangle rect = new Rectangle(len, bre);
+        rect.display();
     }
 }
